@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>هدية لنونه ❤️</title>
+<style>
+body{
+  margin:0;
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:linear-gradient(135deg,#250914,#7b183d,#260915);
+  color:white;
+  font-family:Tahoma,Arial,sans-serif;
+  text-align:center;
+  padding:20px;
+  box-sizing:border-box;
+}
+.box{
+  width:100%;
+  max-width:650px;
+}
+.page{display:none;animation:fade .7s}
+.page.active{display:block}
+h1{font-size:30px}
+p{
+  font-size:19px;
+  line-height:2;
+}
+.heart{font-size:75px}
+button{
+  border:0;
+  border-radius:30px;
+  padding:15px 30px;
+  font-size:19px;
+  font-weight:bold;
+  background:#f04475;
+  color:white;
+  margin-top:20px;
+}
+.letter{
+  background:#fff0f4;
+  color:#35121d;
+  padding:25px;
+  border-radius:20px;
+  text-align:right;
+  line-height:2;
+  font-size:17px;
+  max-height:65vh;
+  overflow:auto;
+}
+@keyframes fade{
+  from{opacity:0;transform:translateY(15px)}
+  to{opacity:1;transform:translateY(0)}
+}
+</style>
+</head>
+
+<body>
+<div class="box">
+
+<div class="page active" id="p1">
+  <div class="heart">🎁</div>
+  <h1>عندي حاجة صغيرة ليكي...</h1>
+  <p>مفاجأة من شخص بيحبك جدًا ❤️</p>
+  <button onclick="next(2)">افتحي يا نونه ❤️</button>
+</div>
+
+<div class="page" id="p2">
+  <h1>رسالة ليكي ❤️</h1>
+  <div class="letter">
+مقصدش ازعجك او اضايقك كل الفكره بس بكون عايز اعمل اي حاجه ولو بسيطه افرحك بيها بكون مبسوط لما بشوفك فرحانه انت اغلى حد فحياتي ومش مستعد اخسرك ممكن يكون بيحصل بقى بينا اختلافات كتير بس كل حاجه بتعدي علشان احنا ملناش غير بعض انتي مراحل في حياتي هحققها حبيبتي وخطيبتي ومراتي وام عيالي مش مستعد اقدر في يوم اشوفك مع حد لأنك مش لحد غيري انا محبتش ولا هحب حد زي ما حبيتك مكنش يجي في بالي اصلا ممكن في يوم احب حد كده كل فتره لازماً يحصل حاجه كده تخلينا نبعد ايام او شهور بس احنا طول ما احنا مع بعض طول ما ايدك في ايدي هنعدي اي حاجه انا مستعد ابعد مش يوم او شهر مستعد ابعد لأخر السنه بس اشوفك دايما مرتاحه واشوفك دايما بخير ممكن تكون دي اخر رساله مني والله اعلم المهم بس عايزك تخلي بالك من نفسك ومن صلاتك ومن مذاكرتك ومن صحتك واكلك واتأكدي غلاوتك عمرها ما هتقل و معزتك عمرها ما هتتشال من قلبي ولا حد هياخد مكانك انتي اللي بدعي ربنا يحفظها فكل ركعه وكل سجده وبطلبك من ربنا ولو حاجه حرام انا مش هعملها ولا هوقعك معايا فذنب وانا يبنتي قولت اكلم اي حد وانتي قولتي لأ ف سكت مش مهم اللي جاي خير بإذن الله ، الحب حرفين وانا حبي فعلا حرفين 💗💗
+  </div>
+  <button onclick="next(3)">كمّلي ❤️</button>
+</div>
+
+<div class="page" id="p3">
+  <div class="heart">💗</div>
+  <h1>آخر كلام...</h1>
+  <p>وجودك في حياتي هو أجمل هدية ❤️</p>
+  <button onclick="next(4)">آخر حاجة 🎁</button>
+</div>
+
+<div class="page" id="p4">
+  <div class="heart">❤️</div>
+  <h1>خلصت المفاجأة...</h1>
+  <p>بس حبي ليكي مخلصش ❤️</p>
+  <p>ربنا يحفظك ويفرح قلبك دايمًا يا نونه 💗💗</p>
+</div>
+
+</div>
+
+<script>
+function next(n){
+  document.querySelectorAll('.page').forEach(x=>x.classList.remove('active'));
+  document.getElementById('p'+n).classList.add('active');
+}
+</script>
+
+</body>
+</html>
